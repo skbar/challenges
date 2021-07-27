@@ -2,24 +2,21 @@
 
 namespace CheckIfTheSameCase
 {
-    class Program
+    public class Program
     {
-        public class IsLowerSample
+        public static bool SameCase(string str)
         {
-            public static bool SameCase(string str)
-            {
-                return str == str.ToUpper() | str == str.ToLower();
-            }
+            return str == str.ToUpper() | str == str.ToLower();
+        }
 
-            public static void Main()
-            {
-                Console.WriteLine(SameCase("hello"));
-                Console.WriteLine(SameCase("HELLO"));
-                Console.WriteLine(SameCase("Hello"));
-                Console.WriteLine(SameCase("ketcHUp"));
+        public static void Main()
+        {
+            Console.WriteLine(SameCase("hello"));
+            Console.WriteLine(SameCase("HELLO"));
+            Console.WriteLine(SameCase("Hello"));
+            Console.WriteLine(SameCase("ketcHUp"));
 
-                Console.ReadKey();
-            }
+            Console.ReadKey();
         }
     }
 }
